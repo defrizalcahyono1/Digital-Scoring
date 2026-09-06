@@ -72,8 +72,8 @@ export const usePertandinganTimer = ({
         const previousRound =
             previousRoundRef.current;
 
-        const previousStatus =
-            previousStatusRef.current;
+        // const previousStatus =
+        //     previousStatusRef.current;
 
         if (previousRound === null) {
 

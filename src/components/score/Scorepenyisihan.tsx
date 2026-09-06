@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import {
     Box,
     Card,
@@ -18,14 +17,12 @@ import {
     MenuItem,
     TablePagination,
     Chip,
-    Button,
 } from "@mui/material";
 
 import {
     Fullscreen,
     FullscreenExit,
     Monitor,
-    Add,
 } from "@mui/icons-material";
 
 import { useTranslation } from "react-i18next";
@@ -69,7 +66,6 @@ type MatchScore = {
 export default function Score() {
 
     const { t } = useTranslation();
-    const navigate = useNavigate();
 
     const {
         sidebarOpen,

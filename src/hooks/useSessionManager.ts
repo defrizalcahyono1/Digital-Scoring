@@ -17,8 +17,11 @@ export const useSessionManager = () => {
     const navigate = useNavigate();
     const { clearUser } = useStore();
 
-    const refreshTimeoutRef = useRef<ReturnType<typeof setTimeout>>();
-    const logoutTimeoutRef = useRef<ReturnType<typeof setTimeout>>();
+    const refreshTimeoutRef =
+        useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    const logoutTimeoutRef =
+        useRef<ReturnType<typeof setTimeout> | null>(null);
 
     const clearTimers = () => {
         if (refreshTimeoutRef.current) clearTimeout(refreshTimeoutRef.current);

@@ -245,19 +245,19 @@ export default function Semi() {
             );
     };
 
-    const formatWeight = (
-        weight?: number | string | null
-    ) => {
-        if (
-            weight === null ||
-            weight === undefined ||
-            weight === ""
-        ) {
-            return "-";
-        }
+    // const formatWeight = (
+    //     weight?: number | string | null
+    // ) => {
+    //     if (
+    //         weight === null ||
+    //         weight === undefined ||
+    //         weight === ""
+    //     ) {
+    //         return "-";
+    //     }
 
-        return `${weight} kg`;
-    };
+    //     return `${weight} kg`;
+    // };
 
     const getRoundScores = (
         matchId: number,
@@ -1052,7 +1052,7 @@ export default function Semi() {
                                     page
                                 }
                                 onPageChange={(
-                                    event,
+                                    _,
                                     newPage
                                 ) =>
                                     setPage(

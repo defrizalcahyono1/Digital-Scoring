@@ -1,15 +1,12 @@
-# Hapus Git lama
-Remove-Item -Recurse -Force .git
+# ================================
+# Git Push - Ignore .env
+# ================================
 
-# Buat Git baru
-git init
-git branch -M main
+Write-Host "=== Git Push Project ===" -ForegroundColor Cyan
 
-# Git identity akun baru
-git config user.name "defrizalcahyono1"
-git config user.email "defrizalcahyono1@gmail.com"
+# 1. Pastikan .env masuk .gitignore
+Write-Host "`n[1] Membuat/update .gitignore..." -ForegroundColor Yellow
 
-# Buat .gitignore
 $gitignore = @"
 .env
 .env.*
@@ -22,17 +19,30 @@ build/
 
 Set-Content -Path ".gitignore" -Value $gitignore
 
-# Hubungkan repository baru
-git remote add origin https://github.com/defrizalcahyono1/Digital-Scoring.git
+# 2. Hapus .env dari Git tracking
+Write-Host "`n[2] Menghapus .env dari Git tracking..." -ForegroundColor Yellow
 
-# Add
+git rm --cached .env 2>$null
+
+# 3. Tambahkan semua perubahan
+Write-Host "`n[3] Git add..." -ForegroundColor Yellow
+
 git add .
 
-# Cek sebelum commit
+# 4. Tampilkan status
+Write-Host "`n[4] Git status..." -ForegroundColor Yellow
+
 git status
 
-# Commit
-git commit -m "first commit"
+# 5. Commit
+Write-Host "`n[5] Commit..." -ForegroundColor Yellow
 
-# Push
-git push -u origin main
+git commit -m "chore: update project and remove env from tracking"
+
+# 6. Push
+Write-Host "`n[6] Push ke GitHub..." -ForegroundColor Yellow
+
+git push
+
+Write-Host "`n=== SELESAI ===" -ForegroundColor Green
+Write-Host ".env tetap ada di komputer dan tidak di-track oleh Git." -ForegroundColor Green
