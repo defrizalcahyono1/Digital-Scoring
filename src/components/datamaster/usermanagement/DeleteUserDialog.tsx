@@ -1,0 +1,32 @@
+import { Dialog, DialogTitle, DialogContent, DialogActions, Button, Typography } from "@mui/material";
+
+interface DeleteUserDialogProps {
+  open: boolean;
+  onClose: () => void;
+  onConfirm: () => void;
+  UserName: string;
+}
+
+export default function DeleteUserDialog({
+  open,
+  onClose,
+  onConfirm,
+  UserName,
+}: DeleteUserDialogProps) {
+  return (
+    <Dialog open={open} onClose={onClose} aria-labelledby="success-dialog-title" sx={{ '& .MuiDialog-paper': { borderRadius: '16px', width: 360, minHeight: 300 } }}>
+      <DialogTitle>Confirm Delete</DialogTitle>
+      <DialogContent>
+        <Typography>
+          Are you sure you want to delete <strong>{UserName}</strong>?
+        </Typography>
+      </DialogContent>
+      <DialogActions>
+        <Button onClick={onClose}>Cancel</Button>
+        <Button variant="contained" color="error" onClick={onConfirm}>
+          Delete
+        </Button>
+      </DialogActions>
+    </Dialog>
+  );
+}
