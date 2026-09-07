@@ -225,6 +225,7 @@ i18n
           controller: "Controller",
           skor: "Score",
           history: "History",
+          profile: "Profile",
 
           // Delete
           confirmDelete: "Confirm Delete",
@@ -440,6 +441,7 @@ i18n
           controller: "Controller",
           skor: "Skor",
           history: "Riwayat",
+          profile: "Profil",
 
           // Delete
           confirmDelete: "Konfirmasi Hapus",
