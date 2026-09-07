@@ -32,7 +32,7 @@ export function useLoginForm() {
         event.preventDefault();
 
         try {
-            const response = await fetch("https://be-digital-scoring.up.railway.app/login", {
+            const response = await fetch("https://be-digital-scoring.up.railway.app/api/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ usernameOrEmail, password }),

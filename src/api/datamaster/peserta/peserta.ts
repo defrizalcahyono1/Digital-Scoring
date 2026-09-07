@@ -1,7 +1,7 @@
 import API from "../../../api/api.js";
 import { Peserta } from "../../../types/peserta";
 
-const API_URL = "https://be-digital-scoring.up.railway.app/peserta";
+const API_URL = "https://be-digital-scoring.up.railway.app/api/peserta";
 
 export const fetchPeserta = async () => {
   try {
