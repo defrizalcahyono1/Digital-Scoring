@@ -2,7 +2,7 @@ import API from "../../../api/api.js";
 import { Juri } from "../../../types/juri";
 import { CreateUserPayload, UpdateUserPayload } from "../../../types/user";
 
-const API_URL = "http://localhost:5000/api/juri";
+const API_URL = "https://be-digital-scoring.up.railway.app/juri";
 
 export const fetchJuri = async () => {
   try {

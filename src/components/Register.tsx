@@ -104,7 +104,7 @@ export default function RegisterPage() {
         try {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const { confirmPassword, ...dataToSend } = formData;
-            const response = await axios.post("http://localhost:5000/api/register", dataToSend);
+            const response = await axios.post("https://be-digital-scoring.up.railway.app/register", dataToSend);
 
             if (response.status === 201) {
                 setDialogMessage("Your account has been successfully created. Please log in to continue.");

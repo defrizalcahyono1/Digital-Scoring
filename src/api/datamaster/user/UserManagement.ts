@@ -1,7 +1,7 @@
 import API from "../../../api/api.js";
 import { User, CreateUserPayload, UpdateUserPayload } from "../../../types/user";
 
-const API_URL = "http://localhost:5000/api/user";
+const API_URL = "https://be-digital-scoring.up.railway.app/user";
 
 export const fetchUser = async () => {
   try {

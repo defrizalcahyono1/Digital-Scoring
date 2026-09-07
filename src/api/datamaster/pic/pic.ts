@@ -2,7 +2,7 @@ import API from "../../../api/api.js";
 import { PIC } from "../../../types/pic";
 import { CreateUserPayload, UpdateUserPayload } from "../../../types/user";
 
-const API_URL = "http://localhost:5000/api/pic";
+const API_URL = "https://be-digital-scoring.up.railway.app/pic";
 
 export const fetchPIC = async () => {
   try {
