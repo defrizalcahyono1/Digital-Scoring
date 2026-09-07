@@ -31,7 +31,7 @@ import { useProfile } from "../../hooks/useProfile";
 import { useProfileStore } from "../../stores/ProfileStore";
 
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = "https://be-digital-scoring.up.railway.app";
 
 
 const getPhotoUrl = (photo: string | null) => {

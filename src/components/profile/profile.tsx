@@ -44,7 +44,7 @@ import { useProfile } from "../../hooks/useProfile";
 import { useTranslation } from "react-i18next";
 import CustomLoading from "../custom/CustomLoading";
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = "https://be-digital-scoring.up.railway.app";
 
 const getPhotoUrl = (
     photo: string | null
