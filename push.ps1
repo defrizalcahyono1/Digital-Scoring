@@ -4,6 +4,15 @@
 
 Write-Host "=== Git Push Project ===" -ForegroundColor Cyan
 
+# 0. Set Git user account
+Write-Host "`n[0] Mengatur Git user account..." -ForegroundColor Yellow
+
+git config user.name "defrizalcahyono1"
+git config user.email "defrizalcahyono1@gmail.com"
+
+Write-Host "Git Name  : defrizalcahyono1" -ForegroundColor Green
+Write-Host "Git Email : defrizalcahyono1@gmail.com" -ForegroundColor Green
+
 # 1. Pastikan .env masuk .gitignore
 Write-Host "`n[1] Membuat/update .gitignore..." -ForegroundColor Yellow
 
@@ -46,3 +55,4 @@ git push
 
 Write-Host "`n=== SELESAI ===" -ForegroundColor Green
 Write-Host ".env tetap ada di komputer dan tidak di-track oleh Git." -ForegroundColor Green
+Write-Host "Commit menggunakan: defrizalcahyono1 <defrizalcahyono1@gmail.com>" -ForegroundColor Green
