@@ -57,7 +57,7 @@ export default function EditPesertaModal() {
       } finally {
         setTimeout(() => {
           setLoading(false);
-        }, 4000);
+        }, 2500);
       }
     };
 

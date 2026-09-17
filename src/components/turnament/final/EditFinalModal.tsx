@@ -264,7 +264,7 @@ export default function EditFinal() {
       } finally {
         setTimeout(() => {
           setInitialLoading(false);
-        }, 4000);
+        }, 2500);
       }
     };
 

@@ -336,7 +336,7 @@ export const usePertandinganTimer = ({
                 syncTimer()
                     .catch(() => {});
 
-            }, 5000);
+            }, 2500);
 
         return () => {
 

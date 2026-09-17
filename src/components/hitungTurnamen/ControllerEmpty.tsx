@@ -20,7 +20,7 @@ const ControllerEmpty = () => {
 
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 4000);
+        }, 2500);
 
         return () => clearTimeout(timer);
     }, [setPageTitle, t]);

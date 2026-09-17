@@ -264,7 +264,7 @@ export default function EditQuarter() {
       } finally {
         setTimeout(() => {
           setInitialLoading(false);
-        }, 4000);
+        }, 2500);
       }
     };
 

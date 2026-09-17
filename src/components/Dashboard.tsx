@@ -148,7 +148,7 @@ const Dashboard: React.FC = () => {
             } finally {
                 setTimeout(() => {
                     setLoading(false);
-                }, 4000);
+                }, 2500);
             }
         };
 

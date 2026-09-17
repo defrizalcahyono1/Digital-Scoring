@@ -14,7 +14,7 @@ export const useJuri = () => {
     } finally {
       setTimeout(() => {
         setLoading(false);
-      }, 4000);
+      }, 2500);
     }
   };
 

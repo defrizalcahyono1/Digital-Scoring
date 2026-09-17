@@ -264,7 +264,7 @@ export default function EditSemi() {
       } finally {
         setTimeout(() => {
           setInitialLoading(false);
-        }, 4000);
+        }, 2500);
       }
     };
 
